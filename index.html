@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <section>
+        <section id="login">
             <div id="imagem">
 
             </div>
@@ -17,16 +17,21 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça seu login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
 
-                <form action="login.php" method="post"></form>
-                <p>
-                    <label for="iemail">E-mail:</label>
-                    <input type="email" name="email" id="iemail">
-                </p>
-                <p>
-                    <label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha">
-                </p>
-
+                <form action="login.php" method="post" autocomplete="off">
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required>
+                    </p>
+                    <p>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha"  required>
+                    </p>
+    
+                    <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                </form>
             </div>
         </section>
     </main>
