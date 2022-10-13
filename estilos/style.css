@@ -40,6 +40,9 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.363);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem{
@@ -51,6 +54,6 @@ section#login > div#imagem{
 
 section#login >div#formulario{
     display:block;
-    padding: 10px;
+    padding: 10px;   
 }
 
